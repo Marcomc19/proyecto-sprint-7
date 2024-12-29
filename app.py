@@ -31,4 +31,4 @@ if build_bar: # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
     #Crear gráfica de barras
     fig_bar = px.bar(car_data, x = 'model_year', y = 'odometer', title= 'Gráfica de Barras')
-    st.plotly_chart(fig_bar, use_container_width=True)
+    st.plotly_chart(fig_bar, use_container_width=True) #Necesario el plotly_chart
