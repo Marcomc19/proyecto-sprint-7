@@ -22,7 +22,7 @@ scatter_button = st.button('Construir gráfico de dispersión')
 if scatter_button:
     st.write('Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
     #Crea un gráfico de dispersión
-    fig = px.scatter(car_data, x = 'Odometer', y = 'price', title = 'Relación entre odómetro y precio')
+    fig = px.scatter(car_data, x = 'odometer', y = 'price', title = 'Relación entre odómetro y precio')
 
 # crear una casilla de verificación
 build_bar = st.checkbox('Construir un histograma')
